@@ -29,7 +29,7 @@ for i in range(1, len(temp_list)):
     Mass.append(temp_list[i][5])
     Radius.append(temp_list[i][6])
     
-df2 = pd.DataFrame(list(zip(Name, Distance, Mass, Radius)), columns = ['Name', 'Distance', 'Mass', 'Radius'])
+df2 = pd.DataFrame(list(zip(Name, Distance, Mass, Radius)), columns = ['name', 'distance', 'mass', 'radius'])
 print(df2)
 
 df2.to_csv('star.csv')
